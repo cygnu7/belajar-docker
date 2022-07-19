@@ -56,3 +56,10 @@ $ docker container create --name mongoserver1 -p 8080:27017 mongo:4.1
 # Delete Image
 ## Must delete container that use the image
 $ docker image rm [image-name]:[image-version]
+
+# Create Dockerfile
+## Create file with name "Dockerfile"
+
+# Build Docker image from Dockerfile
+$ docker build --tag [image-name]:[image-version] [directory-of-Dockerfile]
+$ docker build --tag app-golang:1.0 .
