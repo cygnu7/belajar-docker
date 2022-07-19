@@ -28,4 +28,31 @@ AWS Elastic Container Registry: https://aws.amazon.com/id/ecr/
 $ docker images
 
 # Download Image from Docker Hub
-$ docker pull [image-name]:[version]
+$ docker pull [image-name]:[image-version]
+
+# List Running Container on Docker
+$ docker container ls
+
+# List All Container on Docker
+$ docker container ls --all
+
+# Create Container
+$ docker container create --name [container-name] [image-name]:[image-version]
+
+# Run Container on Docker
+$ docker container start [container-name]
+
+# Stop Container on Docker
+$ docker container stop [container-name]
+
+# Delete Container
+## Must stop the container first
+$ docker container rm [container-name]
+
+# Expose Port for Container
+$ docker container create --name [container-name] -p [exposed-port]:[container:port] [image-name]:[image-version]
+$ docker container create --name mongoserver1 -p 8080:27017 mongo:4.1
+
+# Delete Image
+## Must delete container that use the image
+$ docker image rm [image-name]:[image-version]
