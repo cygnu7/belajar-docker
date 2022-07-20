@@ -29,6 +29,7 @@ $ docker images
 
 # Download Image from Docker Hub
 $ docker pull [image-name]:[image-version]
+$ docker pull cygnus7/app-golang:1.0
 
 # List Running Container on Docker
 $ docker container ls
@@ -63,3 +64,13 @@ $ docker image rm [image-name]:[image-version]
 # Build Docker image from Dockerfile
 $ docker build --tag [image-name]:[image-version] [directory-of-Dockerfile]
 $ docker build --tag app-golang:1.0 .
+
+# Login to Dockerhub
+$ docker Login
+
+# Push Image to Registry / Dockerhub
+## Change tag first from local-tag to repo-tag
+$ docker tag [local-tag] [repo-tag]
+$ docker tag app-golang:1.0 cygnus7/app-golang:1.0
+$ docker push [image-name]:[image-tag]
+$ docker push cygnus7/app-golang:1.0
