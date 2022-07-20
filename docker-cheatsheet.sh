@@ -96,3 +96,17 @@ $ docker exec -ti redis /bin/bash
 # Kitematic
 ## Legacy Desktop Version of Docker Desktop
 Download from "https://github.com/docker/kitematic/releases"
+
+# Remove Docker Garbage
+$ docker image prune
+$ docker container prune
+$ docker network prune
+## Clear all mentioned above
+$ docker system prune
+$ docker system prune -a --volumes
+WARNING! This will remove:
+  - all stopped containers
+  - all networks not used by at least one container
+  - all volumes not used by at least one container
+  - all images without at least one container associated to them
+  - all build cache
