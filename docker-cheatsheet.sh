@@ -74,3 +74,14 @@ $ docker tag [local-tag] [repo-tag]
 $ docker tag app-golang:1.0 cygnus7/app-golang:1.0
 $ docker push [image-name]:[image-tag]
 $ docker push cygnus7/app-golang:1.0
+
+# Docker Network
+$ docker network create [network-name]
+$ docker network connect [network-name] [container-name]
+
+# Docker Compose
+## Create file with name "docker-compose.yml"
+$ docker-compose up -d
+$ docker-compose down
+$ docker-compose start
+$ docker-compose stop
