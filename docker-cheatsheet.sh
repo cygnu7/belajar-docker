@@ -93,3 +93,6 @@ $ docker volume create [volume-name]
 $ docker exec -ti [container-name] [command]
 $ docker exec -ti redis /bin/bash
 
+# Kitematic
+## Legacy Desktop Version of Docker Desktop
+Download from "https://github.com/docker/kitematic/releases"
