@@ -90,4 +90,6 @@ $ docker-compose stop
 $ docker volume create [volume-name]
 
 # Login to Docker Container
-$ docker exec
+$ docker exec -ti [container-name] [command]
+$ docker exec -ti redis /bin/bash
+
