@@ -85,3 +85,6 @@ $ docker-compose up -d
 $ docker-compose down
 $ docker-compose start
 $ docker-compose stop
+
+# Docker Volume
+$ docker volume create [volume-name]
