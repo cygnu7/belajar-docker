@@ -110,3 +110,6 @@ WARNING! This will remove:
   - all volumes not used by at least one container
   - all images without at least one container associated to them
   - all build cache
+
+# Check Reclaimable Space
+$ docker system df
